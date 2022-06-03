@@ -67,7 +67,7 @@ public class NewTest
 			}
 			
 							 
-			Assert.assertTrue(title.contains("Walo")); 	
+			Assert.assertTrue(title.contains("Thinfinity")); 	
 				
 		}	
 		
