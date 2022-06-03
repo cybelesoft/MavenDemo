@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="example.NewTest" time="18.625" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="example.NewTest" time="0.574" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="strip"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\jenkins\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf15030763691917872827.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\jenkins\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5786068735924820858.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.3.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/jenkins/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_18.0.1.v20220515-1614/jre/bin/server;C:/Users/jenkins/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_18.0.1.v20220515-1614/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Maven\apache-maven-3.8.5\bin;C:\Program Files\Git\cmd;C:\Users\jenkins\AppData\Local\Microsoft\WindowsApps;C:\Users\jenkins\AppData\Local\GitHubDesktop\bin;C:\Users\jenkins\eclipse\java-2022-03\eclipse;;."/>
     <property name="jdk.debug" value="release"/>
@@ -58,7 +58,7 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="example.NewTest" name="testEasy" time="18.625">
+  <testcase classname="example.NewTest" name="testEasy" time="0.574">
     <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
@@ -71,17 +71,17 @@
     <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 49439
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 62711
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 03, 2022 4:19:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2022 4:35:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Jun 03, 2022 4:19:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 03, 2022 4:35:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: a no-op implementation
-Jun 03, 2022 4:19:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 03, 2022 4:35:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Unable to find CDP implementation matching 102.
-Jun 03, 2022 4:19:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+Jun 03, 2022 4:35:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you&apos;re using and the version number of the artifact is the same as Selenium&apos;s.
 </system-err>
   </testcase>
