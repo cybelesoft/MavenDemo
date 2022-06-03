@@ -35,7 +35,7 @@ public class NewTest {
 		public void testEasy() {	
 			driver.get("https://192-168-1-129.thinrdp.net:9443");  
 			String title = driver.getTitle();				 
-			Assert.assertTrue(title.contains("Hola Mundo")); 		
+			Assert.assertTrue(title.contains("Thinfinity")); 		
 		}	
 		@BeforeTest
 		public void beforeTest() {	
