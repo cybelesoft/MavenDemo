@@ -127,16 +127,9 @@
                   <a name="WindowsLogon_01">
                   </a> <!-- WindowsLogon_01 -->
                   <span class="method-name">WindowsLogon_01</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@data-qatest=&apos;loggedusername_field&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.2.0&apos;, revision: &apos;86eb611648&apos;
-System info: host: &apos;DESKTOP-A6ELU01&apos;, ip: &apos;192.168.1.163&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\jenkins\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51336/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bc6d00c94b1f91feb0034ad55b9827a3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at example.NewTest.WindowsLogon_01(NewTest.java:117)
-... Removed 29 stack frames
+                  <div class="stack-trace">java.lang.AssertionError: Login user as espected expected [true] but found [false]
+	at example.NewTest.WindowsLogon_01(NewTest.java:126)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -198,12 +191,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'WindowsLogon_01')
 data.setCell(0, 2, 'example.NewTest')
-data.setCell(0, 3, 30710);
+data.setCell(0, 3, 17522);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -238,11 +231,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">WindowsLogon_01</span>
-                <span class="method-start">1890 ms</span>
+                <span class="method-start">2044 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">32607 ms</span>
+                <span class="method-start">19571 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

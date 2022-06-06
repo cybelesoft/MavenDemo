@@ -123,7 +123,7 @@ public class NewTest
             
             userNameActual = filename.toString().toLowerCase();*/            
 
-            Assert.assertTrue(userNameActual == userNameExpected, "Login user as espected");
+            Assert.assertTrue(userNameActual.compareTo(userNameExpected)==0, "Login user as espected");
             
         }
 }	
