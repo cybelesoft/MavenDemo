@@ -120,7 +120,7 @@ public class NewTest
 
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='main-container']//*[@data-qatest='messageerror_field']")));
             WebElement userName = driver.findElement(By.xpath("//div[@class='main-container']//*[@data-qatest='messageerror_field']"));
-            String userNameActual = userName.getText().toLowerCase();
+            String userNameActual = userName.getText();
             
             /*Path path=Paths.get(userNameActual);
             Path filename  = path.getFileName();
