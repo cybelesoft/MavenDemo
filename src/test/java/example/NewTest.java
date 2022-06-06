@@ -74,7 +74,7 @@ public class NewTest
 			String title = driver.getTitle();
 			
 					 
-			Assert.assertTrue(title.contains("Thinfinity")); 	
+			Assert.assertTrue(title.contains("Prueba")); 	
 				
 		}	
 		
