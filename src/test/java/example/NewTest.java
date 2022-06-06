@@ -105,7 +105,33 @@ public class NewTest
             Assert.assertTrue(userNameActual.compareTo(userNameExpected)==0, "Login user as espected");
             
         }
+		@Test(priority = 11)
+		public void WindowsLogon_02()
+        {
+			driver.navigate().to(path + "?signin");	
+           
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\'main-container\']//*[@data-qatest=\'username_field\']")));
+			driver.findElement(By.xpath("//div[@class=\'main-container\']//*[@data-qatest=\'username_field\']")).sendKeys(user_windows);
+					
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\'main-container\']//*[@data-qatest=\'password_field\']")));		
+			driver.findElement(By.xpath("//div[@class=\'main-container\']//*[@data-qatest=\'password_field\']")).sendKeys("ERROR" + Keys.ENTER);
+			            
+            
+
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='main-container']//*[@data-qatest='messageerror_field']")));
+            WebElement userName = driver.findElement(By.xpath("//div[@class='main-container']//*[@data-qatest='messageerror_field']"));
+            String userNameActual = userName.getText().toLowerCase();
+            
+            /*Path path=Paths.get(userNameActual);
+            Path filename  = path.getFileName();
+            
+            userNameActual = filename.toString().toLowerCase();*/            
+
+            Assert.assertTrue(userNameActual.compareTo("Invalid username / password combination.")==0, "Login user as espected");
+            
+        }
 }	
+
 
 
 
