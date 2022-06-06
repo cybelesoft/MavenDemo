@@ -29,12 +29,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;		
 import org.testng.annotations.Test;	
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;		
@@ -47,12 +49,21 @@ public class NewTest
 	    private String user_windows="local\\martintest";
 	    private String password_windows="Admin2020";
 		
+	    
+	    
 		//@BeforeTest
 		@BeforeMethod
-		public void beforeTest() 
+		@Parameters({"Browser"})  
+		public void beforeTest(String browser) 
 		{	
-		    driver = new ChromeDriver();  
-		    
+			
+			if(browser.compareTo("Chrome")==0)
+				driver = new ChromeDriver();  
+			else if(browser.compareTo("Edge")==0)
+				driver = new EdgeDriver();
+			else if(browser.compareTo("Firefox")==0)
+				driver = new FirefoxDriver();
+				
 	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
 	        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
@@ -66,7 +77,7 @@ public class NewTest
 			driver.quit();			
 		}
 		
-		@Test(priority = 20)		
+		@Test(priority = 10)		
 		public void testEasy() 
 		{	
 			driver.get(path);
@@ -74,7 +85,7 @@ public class NewTest
 			String title = driver.getTitle();
 			
 					 
-			Assert.assertTrue(title.contains("Thinfinity")); 	
+			Assert.assertTrue(title.contains("Prueba")); 	
 				
 		}	
 		
@@ -105,7 +116,7 @@ public class NewTest
             Assert.assertTrue(userNameActual.compareTo(userNameExpected)==0, "Login user as espected");
             
         }
-		@Test(priority = 11)
+		@Test(priority = 10)
 		public void WindowsLogon_02()
         {
 			driver.navigate().to(path + "?signin");	
