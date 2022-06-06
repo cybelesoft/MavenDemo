@@ -49,7 +49,7 @@ public class NewTest
 		{
 			driver.quit();			
 		}
-		@Test(priority = 1)		
+		@Test(priority = 20)		
 		public void testEasy() 
 		{	
 			driver.get("https://192-168-1-129.thinrdp.net:9443");
@@ -67,7 +67,7 @@ public class NewTest
 			}
 			
 							 
-			Assert.assertTrue(title.contains("Walo")); 	
+			Assert.assertTrue(title.contains("Thinfinity")); 	
 				
 		}	
 		
