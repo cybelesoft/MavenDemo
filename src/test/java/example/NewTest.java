@@ -65,7 +65,7 @@ public class NewTest
 		{
 			driver.quit();			
 		}
-		/*
+		
 		@Test(priority = 20)		
 		public void testEasy() 
 		{	
@@ -85,29 +85,17 @@ public class NewTest
 										 
 			Assert.assertTrue(title.contains("Thinfinity")); 	
 				
-		}	*/
+		}	
 		
 		
 		@Test(priority = 10)
 		public void WindowsLogon_01()
         {
-            //Arrange (Preparar)
-			driver.navigate().to(path + "?signin");
-
-			try
-			{
-			driver.wait(5000);
-			}
-			catch(Exception ex)
-			{
-				
-				
-			}
+			driver.navigate().to(path + "?signin");	
            
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\'main-container\']//*[@data-qatest=\'username_field\']")));
 			driver.findElement(By.xpath("//div[@class=\'main-container\']//*[@data-qatest=\'username_field\']")).sendKeys(user_windows);
-			
-			
+					
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\'main-container\']//*[@data-qatest=\'password_field\']")));		
 			driver.findElement(By.xpath("//div[@class=\'main-container\']//*[@data-qatest=\'password_field\']")).sendKeys(password_windows + Keys.ENTER);
 			            
