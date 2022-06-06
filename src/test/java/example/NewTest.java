@@ -92,7 +92,7 @@ public class NewTest
 		public void WindowsLogon_01()
         {
             //Arrange (Preparar)
-			driver.get(path + "?signin");
+			driver.navigate().to(path + "?signin");
 
 			try
 			{
