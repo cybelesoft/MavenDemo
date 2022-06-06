@@ -73,16 +73,7 @@ public class NewTest
 			
 			String title = driver.getTitle();
 			
-			try
-			{
-			driver.wait(5000);
-			}
-			catch(Exception ex)
-			{
-				
-				
-			}
-										 
+					 
 			Assert.assertTrue(title.contains("Thinfinity")); 	
 				
 		}	
