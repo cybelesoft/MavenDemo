@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-06T12:57:05 ART" name="Suite" finished-at="2022-06-06T12:57:32 ART" duration-ms="26827">
+    <groups>
+    </groups>
+    <test started-at="2022-06-06T12:57:05 ART" name="Test" finished-at="2022-06-06T12:57:32 ART" duration-ms="26827">
+      <class name="example.NewTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:example.NewTest@478190fc]" started-at="2022-06-06T12:57:05 ART" name="beforeTest" finished-at="2022-06-06T12:57:10 ART" duration-ms="5111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="WindowsLogon_01()[pri:10, instance:example.NewTest@478190fc]" started-at="2022-06-06T12:57:10 ART" name="WindowsLogon_01" finished-at="2022-06-06T12:57:29 ART" duration-ms="19440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WindowsLogon_01 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:example.NewTest@478190fc]" started-at="2022-06-06T12:57:29 ART" name="afterTest" finished-at="2022-06-06T12:57:30 ART" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:example.NewTest@478190fc]" started-at="2022-06-06T12:57:30 ART" name="beforeTest" finished-at="2022-06-06T12:57:31 ART" duration-ms="1403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="testEasy()[pri:20, instance:example.NewTest@478190fc]" started-at="2022-06-06T12:57:31 ART" name="testEasy" finished-at="2022-06-06T12:57:31 ART" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEasy -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:example.NewTest@478190fc]" started-at="2022-06-06T12:57:31 ART" name="afterTest" finished-at="2022-06-06T12:57:32 ART" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- example.NewTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
